@@ -19,8 +19,12 @@ module.exports = {
   },
   plugins: ['import', 'prettier', 'react'],
   rules: {
-    'import/exports-last': 'error',
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/interface-name-prefix': 'off',
+    'react/prop-types': 'off',
     'import/first': 'error',
+    'import/newline-after-import': 'error',
+    'import/no-duplicates': 'error',
     'import/order': [
       'error',
       {
@@ -32,8 +36,12 @@ module.exports = {
       },
     ],
     'prettier/prettier': 'error',
-    'react/prop-types': 'off',
-    '@typescript-eslint/explicit-function-return-type': 'off',
+    'sort-imports': [
+      'error',
+      {
+        ignoreDeclarationSort: true,
+      },
+    ],
   },
   settings: {
     react: {
