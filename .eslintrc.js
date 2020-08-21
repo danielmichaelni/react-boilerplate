@@ -1,9 +1,7 @@
 module.exports = {
   extends: [
     'eslint:recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
-    'plugin:import/typescript',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
     'prettier/@typescript-eslint',
@@ -17,7 +15,7 @@ module.exports = {
       jsx: true,
     },
   },
-  plugins: ['import', 'prettier', 'react'],
+  plugins: ['@typescript-eslint', 'import', 'prettier', 'react'],
   rules: {
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/interface-name-prefix': 'off',
