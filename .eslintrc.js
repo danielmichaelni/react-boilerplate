@@ -17,9 +17,6 @@ module.exports = {
   },
   plugins: ['@typescript-eslint', 'import', 'prettier', 'react'],
   rules: {
-    '@typescript-eslint/explicit-function-return-type': 'off',
-    '@typescript-eslint/interface-name-prefix': 'off',
-    'react/prop-types': 'off',
     'import/first': 'error',
     'import/newline-after-import': 'error',
     'import/no-duplicates': 'error',
@@ -28,18 +25,11 @@ module.exports = {
       {
         alphabetize: {
           order: 'asc',
-          caseInsensitive: false,
         },
         'newlines-between': 'always',
       },
     ],
     'prettier/prettier': 'error',
-    'sort-imports': [
-      'error',
-      {
-        ignoreDeclarationSort: true,
-      },
-    ],
   },
   settings: {
     react: {

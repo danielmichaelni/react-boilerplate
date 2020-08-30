@@ -1,5 +1,6 @@
 import { Layout as BaseLayout, Space } from 'antd';
 import Head from 'next/head';
+import { ReactElement } from 'react';
 import styled from 'styled-components';
 
 const Layout = styled(BaseLayout)`
@@ -27,7 +28,7 @@ const Logo = styled.div`
   font-weight: 600;
 `;
 
-const IndexPage: React.FC = () => (
+const IndexPage = (): ReactElement => (
   <>
     <Head>
       <title>Index</title>
