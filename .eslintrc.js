@@ -30,6 +30,13 @@ module.exports = {
       },
     ],
     'prettier/prettier': 'error',
+    'react/no-unescaped-entities': ['error', { forbid: ['>', '}'] }], // allows single and double quotes
+    'sort-imports': [
+      'error',
+      {
+        ignoreDeclarationSort: true,
+      },
+    ], // sorts multiple members
   },
   settings: {
     react: {
