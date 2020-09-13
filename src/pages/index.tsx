@@ -3,30 +3,17 @@ import Head from 'next/head';
 import { ReactElement } from 'react';
 import styled from 'styled-components';
 
-const Layout = styled(BaseLayout)`
-  min-height: 100vh;
-`;
+const Layout = styled(BaseLayout).attrs({ className: 'min-h-screen' })``;
 
-const Header = styled(BaseLayout.Header)`
+const Header = styled(BaseLayout.Header).attrs({ className: 'border-b border-gray-800' })`
   background: unset;
-  border-bottom: 1px solid #383838;
 `;
 
-const Content = styled(BaseLayout.Content)`
-  margin: auto;
-  max-width: 960px;
-  padding: 50px;
-`;
+const Content = styled(BaseLayout.Content).attrs({ className: 'm-auto max-w-6xl py-12' })``;
 
-const Footer = styled(BaseLayout.Footer)`
-  border-top: 1px solid #383838;
-`;
+const Footer = styled(BaseLayout.Footer).attrs({ className: 'border-t border-gray-800' })``;
 
-const Logo = styled.div`
-  color: #fff;
-  font-size: 16px;
-  font-weight: 600;
-`;
+const Logo = styled.div.attrs({ className: 'font-semibold text-lg text-white' })``;
 
 const IndexPage = (): ReactElement => (
   <>
@@ -49,6 +36,7 @@ const IndexPage = (): ReactElement => (
           <ul>
             <li>Ant Design</li>
             <li>Styled Components</li>
+            <li>Tailwind CSS</li>
           </ul>
           <div>I added some tooling to improve developer efficiency:</div>
           <ul>
