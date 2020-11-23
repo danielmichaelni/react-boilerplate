@@ -11,11 +11,17 @@ const Header = styled(BaseLayout.Header).attrs({
   background: unset;
 `;
 
-const Content = styled(BaseLayout.Content).attrs({ className: 'm-auto max-w-6xl py-12' })``;
+const Content = styled(BaseLayout.Content).attrs({
+  className: 'm-auto max-w-6xl py-12',
+})``;
 
-const Footer = styled(BaseLayout.Footer).attrs({ className: 'border-t border-gray-800' })``;
+const Footer = styled(BaseLayout.Footer).attrs({
+  className: 'border-t border-gray-800',
+})``;
 
-const Logo = styled.div.attrs({ className: 'font-semibold text-lg text-white' })``;
+const Logo = styled.div.attrs({
+  className: 'font-semibold text-lg text-white',
+})``;
 
 const IndexPage = (): ReactElement => (
   <>
@@ -30,11 +36,15 @@ const IndexPage = (): ReactElement => (
       <Content>
         <Space direction="vertical">
           <div>
-            I created this boilerplate because I found myself doing the same things over and over
-            again every time I started a new React project.
+            I created this boilerplate because I found myself doing the same
+            things over and over again every time I started a new React project.
           </div>
-          <div>The boilerplate is built on top of Next.js and uses TypeScript.</div>
-          <div>I added a few libraries I like to use in almost every project:</div>
+          <div>
+            The boilerplate is built on top of Next.js and uses TypeScript.
+          </div>
+          <div>
+            I added a few libraries I like to use in almost every project:
+          </div>
           <ul>
             <li>Ant Design</li>
             <li>Styled Components</li>
