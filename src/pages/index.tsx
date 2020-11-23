@@ -5,7 +5,9 @@ import styled from 'styled-components';
 
 const Layout = styled(BaseLayout).attrs({ className: 'min-h-screen' })``;
 
-const Header = styled(BaseLayout.Header).attrs({ className: 'border-b border-gray-800' })`
+const Header = styled(BaseLayout.Header).attrs({
+  className: 'border-b border-gray-800 flex items-center',
+})`
   background: unset;
 `;
 
