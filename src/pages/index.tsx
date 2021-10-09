@@ -7,7 +7,7 @@ const IndexPage = (): ReactElement => (
       <title>Index</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <div></div>
+    <div>react boilerplate</div>
   </>
 );
 
