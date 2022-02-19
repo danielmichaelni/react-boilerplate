@@ -7,7 +7,9 @@ const IndexPage = (): ReactElement => (
       <title>Index</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <div>react boilerplate</div>
+    <div className="flex h-screen items-center justify-center">
+      react boilerplate
+    </div>
   </>
 );
 
